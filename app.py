@@ -10,7 +10,7 @@ st.write("Upload a CT slice/patch image to check for nodule.")
 
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model("cnn_model.h5")
+   return tf.keras.models.load_model("cnn_model.h5", compile=False)
 
 model = load_model()
 
